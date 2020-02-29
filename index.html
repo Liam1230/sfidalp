@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>全てはそのスマホ1台から</title>
+    <meta charset="utf-8">
+    <script src="http://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="mdb.min.css" rel="stylesheet">
+    <style>
+      .video-wrap {
+        position: relative;
+        height: 300px;
+      }
+      video {
+        display: block;
+        width: 100vw;
+        margin: 0 0 0 auto;
+        height: 300px;
+        object-fit: cover;
+      }
+      p{
+        font-family: sans-serif;
+      }
+      .video-wrap .video-inner-title{
+        font-family: serif;
+        font-size: 400%;
+        position: absolute;
+        width: 100%;
+        color: cornflowerblue;
+        top: 30%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .video-wrap .video-inner-subtitle{
+        font-family: sans-serif;
+        font-size: 250%;
+        background-color:dodgerblue;
+        position: absolute;
+        width: 80%;
+        color: white;
+        top: 60%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .video-wrap .text-highlight{
+        font-size: 300%;
+        position: absolute;
+        width: 100%;
+        top: 30%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="video-wrap view">
+        <video class="top-video" src="http://webcreatorbox.com/sample/images/jewellery.mov" autoplay muted loop>
+            <img src="http://webcreatorbox.com/sample/images/jewellery.jpg" alt="Placeholder">
+        </video>
+        <div class="mask flex-center">
+            <p class="video-inner-title font-weight-bold"><i><b>全てはそのスマホ1台から</b></i></p>
+            <p class="video-inner-subtitle">完全フルオート自動運用システム</p>
+        </div>
+    </div>
+    <div class="video-wrap view">
+        <video src="coin.mp4" autoplay muted loop>
+            <img src="http://webcreatorbox.com/sample/images/jewellery.jpg" alt="Placeholder">
+        </video>
+        <div class="mask flex-center rgba-white-strong">
+            <p class="text-highlight font-weight-bold"><i>最大月利<strong class="text-success">2400%</strong>の驚異的実績</i></p>
+            <p class="video-inner-subtitle">完全フルオート自動運用システム</p>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <p>普通の文字</p>
+</div>
+</body>
+</html>
+
+<script>
+var app = new Vue({
+    el: "#app",
+    data:{
+        itemId:"",
+    },
+    mounted: function(){
+        
+    },
+    methods: {
+    }
+})
+</script>
+        
